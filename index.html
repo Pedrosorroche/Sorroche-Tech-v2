@@ -474,21 +474,21 @@
             </div>
             <div class="row text-center">
               <div class="col-lg-12 d-flex justify-content-center">
-                <form class="form-body row">
+                <form class="form-body row" action="php/submitEmail.php" method="post">
                   <div class="form-group col-md-6">
-                    <input type="text" class="form-control" placeholder="Nome *" required>
+                    <input type="text" class="form-control" name="nome" placeholder="Nome *" required>
                   </div>
                   <div class="form-group col-md-6">
-                    <input type="email" class="form-control" placeholder="E-mail *" required>
+                    <input type="email" class="form-control" name="email" placeholder="E-mail *" required>
                   </div>
                   <div class="form-group col-md-6">
-                    <input type="text" class="form-control" placeholder="Telefone *" required>
+                    <input type="text" class="form-control" name="telefone" placeholder="Telefone *" required>
                   </div>
                   <div class="form-group col-md-6">
-                    <input type="text" class="form-control" placeholder="Assunto">
+                    <input type="text" class="form-control" name="assunto" placeholder="Assunto">
                   </div>
                   <div class="form-group col-md-12">
-                    <textarea rows="4" class="form-control" placeholder="Mensagem *" required></textarea>
+                    <textarea rows="4" class="form-control" name="mensagem" placeholder="Mensagem *" required></textarea>
                   </div>
                   <div class=" col-md-12 mb-3">
                     <button type="submit" class="btn btn-primary btn-radius">Enviar Mensagem!</button>
